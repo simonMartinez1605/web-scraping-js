@@ -10,4 +10,4 @@ const ProductSchema = new Schema({
     meli_url: String
 })
 
-export const Product = mongoose.model("Product", ProductSchema)
+export const Product = mongoose.model("Product", ProductSchema); 

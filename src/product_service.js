@@ -1,4 +1,4 @@
-import { Product } from "./product";
+import { Product } from "./product.js";
 
 export class ProductService{
     constructor(){}
@@ -8,6 +8,6 @@ export class ProductService{
     }
 
     async updateProduct(productId, data){
-
+        await Product.findByIdAndUpdate(productId, data)
     }
 }
